@@ -237,7 +237,7 @@ def creating_table(cloud_list, df_basic, output_dir):
     
     df = pd.DataFrame({'Galaxy_ID':[], 'Cloud_ID':[], 'Mcloud':[], 'Rcloud':[], 'c_Pressure':[], 'Metallicity':[], 'RadField':[], 'c_DMR':[], 'c_SFR':[], 'redshift':[], 'H2_lcii':[], 'CO10':[], 'CO21':[], 'CO32':[], 'CO43':[], 'CO54':[], 'CO10_intTB':[], 'CO21_intTB':[], 'CO32_intTB':[], 'CO43_intTB':[], 'CO54_intTB':[], 'CI10':[], 'CI21':[], 'CO65':[], 'CO76':[], 'CO87':[], 'CO98':[], 'CO65_intTB':[], 'CO76_intTB':[], 'CO87_intTB':[], 'CO98_intTB':[], 'OI1':[], 'OI2':[], 'OI3':[], 'fH2':[], 'fH':[], 'fHp':[], 'gas_temp':[], 'dust_temp':[], 'n_dens':[],'col_dens':[], 'sigmaNT':[], 'Mol_gas':[], 'CO10_areal_TB':[], 'x':[], 'y':[], 'z':[], 'conv_flag':[], 'conv_str':[], 'time':[]})
     
-    UV_df = pd.read_csv("UV_background.csv")
+    UV_df = pd.read_csv("UV_background.csv")    #this must exist in the folder from which you run "slick_run_jobscript.sh"
 
     for c in cloud_list:
             
